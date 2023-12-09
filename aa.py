@@ -2,10 +2,10 @@ import pygame
 import sys
 import random
 
-# Initialize Pygame
+
 pygame.init()
 
-# Constants
+
 WIDTH, HEIGHT = 800, 600
 BALL_RADIUS = 20
 GOAL_WIDTH = 100
@@ -18,14 +18,14 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Goal Shooter")
 
 
-background_image = pygame.image.load("b.jpg")  # Replace with the path to your image
+background_image = pygame.image.load("b.jpg")  
 
 
-ball_image = pygame.image.load("cupcake.jpeg")  # Replace with the path to your ball image
+ball_image = pygame.image.load("cupcake.jpeg")  
 ball_image = pygame.transform.scale(ball_image, (BALL_RADIUS * 2, BALL_RADIUS * 2))
 
 # Load goal image
-goal_image = pygame.image.load("R.jpeg")  # Replace with the path to your goal image
+goal_image = pygame.image.load("R.jpeg")  
 goal_image = pygame.transform.scale(goal_image, (GOAL_WIDTH, GOAL_HEIGHT))
 
 
@@ -41,10 +41,10 @@ goal_speed = [INITIAL_GOAL_SPEED, 0]
 
 score = 0
 
-goal_score_sound = pygame.mixer.Sound("a.mp3")  # Replace with the path to your sound file
+goal_score_sound = pygame.mixer.Sound("a.mp3")  
 
 
-miss_sound = pygame.mixer.Sound("aa.mp3")  # Replace with the path to your sound file
+miss_sound = pygame.mixer.Sound("aa.mp3")  
 
 
 while True:
